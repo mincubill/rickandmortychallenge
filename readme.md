@@ -14,4 +14,5 @@ Lo end-points fueron definidos utilizando https://editor.swagger.io
 El archivo yaml, se encuentra en /src/main/resources/api.yaml.
 Las clases e interfaces fueron generadas por la herramienta web
 
-
+Para probar los end-points la collection de postman esta en la raiz del proyecto
+RickAndMortyChallenge.postman.json
