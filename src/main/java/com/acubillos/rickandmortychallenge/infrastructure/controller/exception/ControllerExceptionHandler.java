@@ -19,7 +19,7 @@ public class ControllerExceptionHandler {
         return new ResponseEntity<>(new Errors().message(exception.getMessage()), HttpStatus.NOT_FOUND);
     }
 
-    @ResponseStatus(HttpStatus.CONFLICT)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(InvalidIdException.class)
     public ResponseEntity<Errors> errorHandler(InvalidIdException exception) {
         return new ResponseEntity<>(new Errors().message(exception.getMessage()), HttpStatus.CONFLICT);
