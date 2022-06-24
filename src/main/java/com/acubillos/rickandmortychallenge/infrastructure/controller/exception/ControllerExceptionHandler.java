@@ -22,7 +22,7 @@ public class ControllerExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(InvalidIdException.class)
     public ResponseEntity<Errors> errorHandler(InvalidIdException exception) {
-        return new ResponseEntity<>(new Errors().message(exception.getMessage()), HttpStatus.CONFLICT);
+        return new ResponseEntity<>(new Errors().message(exception.getMessage()), HttpStatus.BAD_REQUEST);
     }
 
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
